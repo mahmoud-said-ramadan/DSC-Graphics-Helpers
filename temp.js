@@ -107,3 +107,15 @@ function validatedate()
         return true;
     }
 }
+
+function ValidationFinal()
+{
+    if (validatefname() && validatelname() && validatespci() && validatedsc() && validatedate() )
+    {
+        // here///////////////////////
+    }
+    else
+    {
+        // here///////////////////////
+    }
+}
