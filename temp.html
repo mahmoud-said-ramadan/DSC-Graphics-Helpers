@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Certificate</title>
+    <title>DSC Posts Helper</title>
     <link rel="stylesheet" href="temp.css">
     <script src="temp.js"></script>
     <!-- Online Links -->
@@ -13,18 +13,18 @@
     <section>
         <form method="POST" action="#" id="container">
             <div id="content">
-                <h1>Generate A Certificate</h1>
+                <h1>DSC Graphics Helper</h1>
                 <hr>
                 <div class="row">
                     <div class="col-lg-2 col-md-1 col-xs-0"></div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="fname" >First Name*</label>
-                        <input class="inputs" id="fname" type="text" placeholder="first name" onfocusout="validatefname()">
+                        <label class="labels" for="fname" >Instructor First Name</label>
+                        <input class="inputs" id="fname" type="text" placeholder="e.g : Khaled" onfocusout="validatefname()">
                         <span id="errfname" class="text-danger font-weight-bold"></span>
                     </div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="lname" >Last Name*</label>
-                        <input class="inputs" id="lname" type="text" placeholder="last name" onfocusout="validatelname()">
+                        <label class="labels" for="lname" >Instractor Last Name</label>
+                        <input class="inputs" id="lname" type="text" placeholder="e.g : Mahmoud" onfocusout="validatelname()">
                         <span id="errlname" class="text-danger font-weight-bold"></span>
                     </div>
                     <div class="col-lg-2 col-md-1 col-xs-0"></div>
@@ -33,13 +33,13 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-1 col-xs-0"></div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="spci" >Specialization*</label>
-                        <input class="inputs" id="spci" type="text" placeholder="specialization" onfocusout="validatespci()">
+                        <label class="labels" for="spci" >Instructor Title </label>
+                        <input class="inputs" id="spci" type="text" placeholder="e.g: Flutter Developer" onfocusout="validatespci()">
                         <span id="errspci" class="text-danger font-weight-bold"></span>
                     </div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="dsc" >DSC name*</label>
-                        <input class="inputs" id="dsc" type="text" placeholder="DSC name" onfocusout="validatedsc()">
+                        <label class="labels" for="dsc" >DSC Chapter Name</label>
+                        <input class="inputs" id="dsc" type="text" placeholder="e.g :Future Academy " onfocusout="validatedsc()">
                         <span id="errdsc" class="text-danger font-weight-bold"></span>
                     </div>
                     <div class="col-lg-2 col-md-1 col-xs-0"></div>
@@ -48,12 +48,12 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-1 col-xs-0"></div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="date" >Date*</label>
+                        <label class="labels" for="date" >Event Date</label>
                         <input class="inputs" id="date" type="date" required onfocusout="validatedate()">
                         <span id="errdate" class="text-danger font-weight-bold"></span>
                     </div>
                     <div class="col-lg-4 col-md-5 col-xs-12">
-                        <label class="labels" for="time" >Time*</label>
+                        <label class="labels" for="time" >Event Time</label>
                         <input class="inputs" id="time" type="time" required onfocusout="validatetime()">
                         <span id="errtime" class="text-danger font-weight-bold"></span>
                     </div>
