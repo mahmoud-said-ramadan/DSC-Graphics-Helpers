@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>Certificate</title>
+    <link rel="stylesheet" href="temp.css">
+    <script src="temp.js"></script>
+    <!-- Online Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section>
+        <form method="POST" action="#" id="container">
+            <div id="content">
+                <h1>Generate A Certificate</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="fname" >First Name*</label>
+                        <input class="inputs" id="fname" type="text" placeholder="first name" onfocusout="validatefname()">
+                        <span id="errfname" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="lname" >Last Name*</label>
+                        <input class="inputs" id="lname" type="text" placeholder="last name" onfocusout="validatelname()">
+                        <span id="errlname" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="spci" >Specialization*</label>
+                        <input class="inputs" id="spci" type="text" placeholder="specialization" onfocusout="validatespci()">
+                        <span id="errspci" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="dsc" >DSC name*</label>
+                        <input class="inputs" id="dsc" type="text" placeholder="DSC name" onfocusout="validatedsc()">
+                        <span id="errdsc" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="date" >Date*</label>
+                        <input class="inputs" id="date" type="date" required onfocusout="validatedate()">
+                        <span id="errdate" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-xs-12">
+                        <label class="labels" for="time" >Time*</label>
+                        <input class="inputs" id="time" type="time" required onfocusout="validatetime()">
+                        <span id="errtime" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-8 col-md-10 col-xs-12">
+                        <label class="labels uploads" for="" >Upload Your Photo</label>
+                        <input class="inputs uploads" type="file" accept="image/*">
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+                <label class="labels" style="text-align: center;">Choose your Template:</label>
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-4 col-md-5 col-xs-6">
+                        <span>
+                            <input type="radio" name="certificate-temp" value="1" checked>
+                            <img class="temp-img" src="DSC.png" alt="certificate-temp">
+                        </span>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-xs-6">
+                        <span>
+                            <input type="radio" name="certificate-temp" value="2">
+                            <img class="temp-img" src="DSC.png" alt="certificate-temp">
+                        </span>
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                    <div class="col-lg-8 col-md-10 col-xs-12">
+                        <input style="width: 100px; margin-top: 10px; background-color: #007bff;" class="inputs" type="submit" value="Generate">
+                    </div>
+                    <div class="col-lg-2 col-md-1 col-xs-0"></div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
